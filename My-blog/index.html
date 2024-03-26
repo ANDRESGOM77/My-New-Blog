@@ -3,20 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asses/CSS/styles.css">
     <link rel="stylesheet" href="asses/CSS/from.css">
     <title>Document</title>
 </head>
 <body>
-    <header class="container">
+    <header>
         <nav>
-        <a href="#" class="logo">AG</a>
-        <div class="Checkbox">
-            <button class="switch" id="Checkbox">
-                <span><i class="fas fa-sun"></i></span>
-                <span><i class="fas fa-moon"></i></span>
-            </button>
-        </div>
+            <a href="#" class="logo">AG</a>
+            <div id="container">
+            <div class="toggle"></div>
+            </div>
         </nav>
     </header>
+
+    <main>
+        <div id="form">
+        <form action="blog.html">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+            <label for="Title">Title</label>
+            <input type="text" id="Title" name="title">
+            <label for="name">Content</label>
+            <textarea type="text" id="name" name="name" cols="30" rows="8"></textarea>
+            <button type="submit">submit</button>
+        </form>
+        </div>
+    </main>
+    <script src="/asses/js/logic.js"></script>
 </body>
 </html>

@@ -1,0 +1,51 @@
+:root{
+  
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    border: black solid 2px;
+}
+#container{
+    display: flex;
+    background-color: white;
+    position: relative;
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    box-shadow: inset 4px 4px 6px #cecece,
+                inset -4px -4px 6px white;
+    cursor: pointer;
+
+}
+
+.toggle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    transform: scale(.7);
+    background-color: linear-gradiant(145deg, #d8d8d8, #ffffff);
+    box-shadow: 3px 3px 8px #c4c4c4,
+                -3px -3px 8px;
+    border-radius: 25px;
+}
+
+#container.active .toggle{
+    left: 50px;
+}
+
+body.active{
+    background-color: black;
+}
