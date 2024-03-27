@@ -19,7 +19,7 @@
 body{
     background-color: var(--white);
     transition: .3s ease all;
-    background-image: url('/asses/Images/landscape-DAY.png') ;
+    background-image: url('/asses/Images/landscape-DAY.png');
     background-size: cover;
     background-position: center;
 }
@@ -44,12 +44,15 @@ body.dark nav a:hover{
 nav{
     display: flex;
     justify-content: space-between;
-    padding: 25px;
+    align-items: center;
+    height: 75px;
     border: var(--black) solid 2px;
     margin: 25px;
     border-radius: 50px;
 }
+nav a{
 
+}
 #switch{
     display: flex;
     background-color: var(--grey-dark);
@@ -94,4 +97,33 @@ nav{
 #switch.active::after{
     right: 0;
     left: unset;
+}
+footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 25px;
+    border: var(--black) solid 2px;
+}
+
+footer ul{
+    list-style-type: none;
+    justify-content: space-between;
+    display: flex;
+
+}
+footer ul li{
+   display: inline;
+}
+body.dark footer{
+    background-color: var(--grey-dark);
+    box-shadow: var(--grey-light);
+}
+body.dark footer ul li{
+    color: var(--grey-light);
+    text-decoration: none;
+}
+body.dark footer ul li:hover{
+    color: var(--white);
 }
