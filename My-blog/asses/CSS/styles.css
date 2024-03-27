@@ -19,10 +19,16 @@
 body{
     background-color: var(--white);
     transition: .3s ease all;
+    background-image: url('/asses/Images/landscape-DAY.png') ;
+    background-size: cover;
+    background-position: center;
 }
 /* CREATING DRAK CLASS OF BODY AND ELEMENTES INSIDE */
 body.dark{
     background-color: var(--black);
+    background-image: url('/asses/Images/landscape-NIGHT.png');
+    background-size: cover;
+    background-position: center;
 }
 body.dark nav{
     background-color: var(--grey-dark);
@@ -61,6 +67,9 @@ nav{
     line-height: 45px;
     display: block;
     color: var(--white);
+}
+#switch i{
+   padding: 15px;
 }
 
 #switch::after{
