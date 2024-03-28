@@ -3,12 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="asses/CSS/styles.css">
+    <link rel="stylesheet" href="asses/CSS/from.css">
+    <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/2893c0e3d2.js" crossorigin="anonymous"></script>
+    <title>My personal blog</title>
 </head>
 <body>
-    <div>
-        <input class="checkbox" type="checkbox" id="checkbox">
-        
-    </div>
+    <header>
+        <nav>
+            <a href="#" class="logo">AG</a>
+            <button class="switch" id="switch">
+                <span><i class="fa-regular fa-sun"></i></span>
+                <span><i class="fa-regular fa-moon"></i></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <div id="Form">
+        <form action="blog.html">
+            <h1>My blog</h1>
+            <label for="Username">Username</label>
+            <input type="text" id="Username" placeholder="Username" required>
+            <label for="Title">Title</label>
+            <input type="text" id="Title" placeholder="title"  required>
+            <label for="name">Content</label>
+            <textarea type="text" id="Content" placeholder="Content" rows="6"required></textarea>
+            <button type="submit">submit</button>
+        </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <ul>
+                <li>
+                    linkId: Andres Gomez
+                </li>
+                <li>
+                    Phone:+61 404 332 389
+                </li>
+                <li>
+                    E-mail: andresgom2009@gmail.com
+                </li>
+
+            </ul>
+        </div>
+    </footer>
+    <script src="/asses/js/logic.js"></script>
+    <script src="/asses/js/form.js"></script>
 </body>
 </html>
