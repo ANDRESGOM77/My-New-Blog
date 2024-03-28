@@ -44,8 +44,24 @@ body.dark nav a{
 }
 body.dark nav a:hover{
     color: var(--white);
+    transition: .3s ease all;
 }
-
+body.dark .card{
+    color: var(--white);
+    transition: .3s ease all;
+}
+body.dark .card h3{
+    color: var(--white);
+    transition: .3s ease all;
+}
+body.dark .card p{
+    color: var(--white);
+    transition: .3s ease all;
+}
+body.dark h1{
+    color: var(--white);
+    transition: .3s ease all;
+}
 nav{
     display: flex;
     justify-content: space-between;

@@ -35,6 +35,13 @@
     padding-left: 0;
 
 }
+nav a{
+    color: var(--black);
+}
+h1 {
+    padding-left: 15px;
+    font-family: cursive;
+}
 #Container {
     max-width: 100%;
     margin: 0 auto;
@@ -48,22 +55,26 @@
     margin-bottom: 20px;
     box-shadow: var(--shadow-light);
     max-width: 100%;
-    width: 33.3%;
+    width: 95%;
+    margin-left: 15px;
 }
 .card h3 {
     color: var(--black);
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 0;
 }
 .card p {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 1.6px;
     color: var(--grey-dark);
     margin-bottom:10px;
 }
-
+.Username, .title{
+    padding-bottom: 10px;
+}
 
 .content{
     margin-top: 1%;
     margin-bottom: 1%;
+    font-family: cursive;
 }
