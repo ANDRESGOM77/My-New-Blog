@@ -47,6 +47,7 @@ body.dark nav a:hover{
     transition: .3s ease all;
 }
 body.dark .card{
+    backdrop-filter: blur(3px);
     color: var(--white);
     transition: .3s ease all;
 }
@@ -86,6 +87,7 @@ nav a{
     border-radius: 30px;
     box-shadow: var(--grey-light);
     cursor: pointer;
+    margin-right: 15px;
 
 }
 #switch span{

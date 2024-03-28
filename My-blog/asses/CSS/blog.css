@@ -57,6 +57,7 @@ h1 {
     max-width: 100%;
     width: 95%;
     margin-left: 15px;
+    backdrop-filter: blur(3px);
 }
 .card h3 {
     color: var(--black);
