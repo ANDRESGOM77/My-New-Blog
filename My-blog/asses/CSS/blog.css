@@ -1,0 +1,62 @@
+/* declaring valiables */
+:root{
+    --white: white;
+    --black: #111111;
+    --grey-light: #c8c8c8;
+    --grey-dark:#222222;
+  
+    --shadow-light: 10px 10px 20px rgba(0,0,0,16);
+    --shadow-dark: 10px 10px 20px rgba(170,170,170,.16);
+  }
+  /* UNIVERSAL */
+  *{
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+  }
+#Go-back{
+    display: flex;
+    background-color: var(--grey-dark);
+    position: relative;
+    height: 50px;
+    border-radius: 30px;
+    box-shadow: var(--grey-light);
+    cursor: pointer;
+}
+#back{
+    display: flex;
+    background-color: var(--grey-dark);
+    position: relative;
+    height: 50px;
+    border-radius: 30px;
+    box-shadow: var(--grey-light);
+    cursor: pointer;
+    color: var(--grey-light);
+    padding-left: 0;
+
+}
+#Container {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.card {
+    border: 1px solid var(--grey-light);
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow-light);
+    max-width: 100%;
+}
+.card h3 {
+    color: var(--black);
+    font-size: 25px;
+    margin-top: 0;
+}
+.card p {
+    font-size: 25px;
+    line-height: 1.6px;
+    color: var(--grey-dark);
+    margin-bottom:10px;
+}

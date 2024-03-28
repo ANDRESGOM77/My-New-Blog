@@ -14,15 +14,18 @@
     padding: 0;
     margin: 0;
     font-family: "poppins", sans-serif;
+    
 }
-/* CREATING BODY */
+/* CREATING BODY AND MAIN */
 body{
     background-color: var(--white);
     transition: .3s ease all;
     background-image: url('/asses/Images/landscape-DAY.png');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
+
 /* CREATING DRAK CLASS OF BODY AND ELEMENTES INSIDE */
 body.dark{
     background-color: var(--black);
@@ -30,6 +33,7 @@ body.dark{
     background-size: cover;
     background-position: center;
 }
+
 body.dark nav{
     background-color: var(--grey-dark);
     box-shadow: var(--grey-light);
@@ -41,6 +45,7 @@ body.dark nav a{
 body.dark nav a:hover{
     color: var(--white);
 }
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -49,6 +54,7 @@ nav{
     border: var(--black) solid 2px;
     margin: 25px;
     border-radius: 50px;
+    background-color: var(--grey-light);
 }
 nav a{
     text-decoration: none;
@@ -107,6 +113,7 @@ footer{
     width: 100%;
     padding: 25px;
     border: var(--black) solid 2px;
+    background-color: var(--grey-light);
 }
 
 footer ul{

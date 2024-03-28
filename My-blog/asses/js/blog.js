@@ -1,5 +1,5 @@
-let posts = JSON.parse(localStorage.getItem('postsList')) || [];
-let blogContainer = document.getElementById('container');
+let postsList = JSON.parse(localStorage.getItem('postsList')) || [];
+let Container = document.getElementById('container');
 
 function createCard(data) {
   let card = document.createElement('div');
@@ -15,7 +15,7 @@ function createCard(data) {
   return card;
 }
 
-posts.forEach(function(formData) {
+postsList.forEach(function(formData) {
   let card = createCard(formData);
-  blogContainer.appendChild(card);
+  Container.appendChild(card);
 });
