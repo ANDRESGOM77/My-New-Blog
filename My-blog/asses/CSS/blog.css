@@ -48,6 +48,7 @@
     margin-bottom: 20px;
     box-shadow: var(--shadow-light);
     max-width: 100%;
+    width: 33.3%;
 }
 .card h3 {
     color: var(--black);
@@ -59,4 +60,10 @@
     line-height: 1.6px;
     color: var(--grey-dark);
     margin-bottom:10px;
+}
+
+
+.content{
+    margin-top: 1%;
+    margin-bottom: 1%;
 }

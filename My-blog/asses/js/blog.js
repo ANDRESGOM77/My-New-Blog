@@ -1,21 +1,20 @@
 let postsList = JSON.parse(localStorage.getItem('postsList')) || [];
-let Container = document.getElementById('container');
+let Container = document.getElementById('Container');
 
-function createCard(data) {
-  let card = document.createElement('div');
-  card.className = 'card';
-  card.innerHTML = `
-    <h3>Username</h3>
-    <p>${data.username}</p>
-    <h3>Title</h3>
-    <p>${data.title}</p>
-    <h3>Comment</h3>
-    <p>${data.comment}</p>
-    `;
-  return card;
-}
+postsList.forEach(function (formData) {
+    let card = document.createElement('div');
+    card.className = 'card';
 
-postsList.forEach(function(formData) {
-  let card = createCard(formData);
-  Container.appendChild(card);
+    let username = document.createElement('h2')
+    let title = document.createElement('h3')
+    let content = document.createElement('p')
+
+    content.className = 'content'
+
+    username.textContent = 'Username: ' + formData.username
+    title.textContent = 'Title: ' + formData.title
+    content.textContent = formData.Content
+
+    card.append(username, title, content)
+    Container.append(card);
 });
